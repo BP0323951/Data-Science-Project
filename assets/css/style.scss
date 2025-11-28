@@ -3,23 +3,11 @@
 
 @import "jekyll-theme-cayman";
 
-/* Make the header a positioning context for the logo */
 .page-header {
   position: relative;
 }
 
-/* Add your logo to the top-right */
 .page-header::after {
-  content: url("{{ '/Images/Headshot.png' | relative_url }}");
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: inline-block;
-  width: 120px; /* browsers may not scale content: url; optional if you switch to background-image */
-}
-
-/* Alternative (more controllable) approach: use a background-image instead of content:url */
-/* .page-header::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -29,4 +17,4 @@
   background-image: url("{{ '/Images/Headshot.png' | relative_url }}");
   background-size: cover;
   border-radius: 50%;
-} */
+}
