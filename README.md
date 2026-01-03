@@ -54,3 +54,17 @@ Figure 1.6 illustrates the correlation matrix between all possible features. As 
 ### Data Analytics
 Within Python the ‘statsmodels’ package was used. This package shares similarities with R syntax making it interpretable for a wider audience. The model was created using the ‘df_train’ dataframe and whilst the model summary is invaluable it does not test the df_test dataframe. A mixture of sklearn and numpy packages along with a locally defined function will be used to test the model.  
 
+![Metric table](Images/fig_1_7_table.png)
+![Scatter plots](Images/fig_1_7_2.png)
+
+Before starting this project it was assumed that both prevalence and deprivation would create a linear regression model that accurately predicted Achieved QOF points, with either prevalence or deprivation showing overall to be a more successful predictor. This was not achieved and instead most of the variation in achieved points must be due to factors outside of the data model. The author has spent some time considering whether a pre-bias in perceived outcome prevented a full investigation into whether this was a feasible project idea.
+
+However, with reference to the original graph which started the project (figure 1.1) it was compelling to hypothesis that deprivation could be aligned with QOF achievement. This was not quite the pattern observed within the subset of data used in the model, which whilst more quadratic in nature suggested only the least deprived 20% (IMD Quintil 5) has a different distribution. Additionally, to highlight the difference in interpretation where the y-axis is limited (left plot in figure 1.8) compared to removing the limits on the y-axis (right plot in figure 1.8)
+
+![Relative Axis QOF distribution](Images/fig_1_8_1.png)
+![Absolute Axis QOF distribution](Images/fig_1_8_2.png)
+_Figure 1.8 Both the potential quadratic relationship between Achieved QOF points and IMD Quintile, along with the visual effect of limiting the y-axis vs using an absolute scale._
+
+Also, rather than using IMD Quintile, which is a categorical value the models themselves were run on rank, which is more continuous (the rank of each LSOA across the country from the most to least deprived). The difference between a descriptive statistic (figure 1.1 mean by IMD Quintile and figure 1.8 boxplot by IMD Quintile) and using the IMD Rank within a regression model is that the descriptive grouping by quintile does not show whether the variation in correlation/patterns required within a regression model is truly present. 
+
+As a conclusion, a naïve approach was used to feature selection, perhaps using a feature reduction algorithm like LASSO linear regression could also improve performance by applying a penalty shrinking some coefficients, sometimes to zero and hence performing feature selection. It is also likely that it is features not included in the dataset which account for the differences observed. However, as previously discussed it is also likely that the small standard deviation makes it difficult for the model to find meaningful relationships between features and the output variable (QOF Achieved points).
