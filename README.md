@@ -8,3 +8,4 @@ _“QOF rewards GP practices for the provision of 'quality care' and helps to fu
 In 2023 the Health Equity Evidence Centre published a compelling online article called “Structural inequalities in primary care – the facts and figures” (Appel and Ford, 2023). This examined QOF and included the graph in figure 1.1 which appears to indicate more deprived GP practices achieve less QOF points. Thus QOF does not reduce inequality.
 
 ![Deprivation&QOF](Images/fig_1_1.png)
+<p style="text-align:center; font-style:italic;">_Figure 1.1 The average QOF points when split by index of multiple deprivation quintile, showing fewer points awarded to the most deprived areas._</p>
