@@ -37,3 +37,23 @@ figure figcaption {
   font-style: italic;
   margin-top: 0.5em;
 }
+
+.double-figure-images {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.double-figure-images img {
+  max-width: 45%;
+  height: auto;
+  display: block;
+}
+
+.double-figure figcaption {
+  display: block !important;
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 0.75em;
+}
