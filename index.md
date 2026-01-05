@@ -14,7 +14,7 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
 <p align="center">
   <img src="/Images/fig_1_1.png"
        alt="Data model"
-       style="display:block;margin:0 auto;width:800px;">
+       style="display:block;margin:0 auto;max-width:50%;height:auto;">
 </p>
 
 _Figure 1.1 The average QOF points when split by index of multiple deprivation quintile, showing fewer points awarded to the most deprived areas._
