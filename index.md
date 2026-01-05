@@ -22,6 +22,16 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
     showing fewer points awarded to the most deprived areas.
 </p>
 
+<figure>
+  <img src="/Images/fig_1_1.png"
+       alt="Data model"
+       style="max-width:50%;height:auto;">
+ <figcaption>
+    Figure 1.1 The average QOF points when split by index of multiple deprivation quintile,
+    showing fewer points awarded to the most deprived areas.
+  </figcaption>
+</figure>
+
 Note that in the figure 1.1 IMD quintile 1 relates to the least deprived, however this is not the industry standard and so within this study IMD Quintile 1 will relate to the most deprived.
 
 QOF is designed to assist with the additional workload associated with higher prevalence of disease it would perhaps be logical to speculate that perhaps higher prevalence would result in lower QOF achievement points. This would reduce the burden of inequality across the country: 
