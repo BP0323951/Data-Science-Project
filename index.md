@@ -68,7 +68,7 @@ Initially figure 1.1 was recreated, as closely as possible, using the subset dat
 <figure>
   <img src="{{ 'Images/fig_1_4.png'| relative_url }}"
        alt="Figure 1.4"
-       style="max-width:60%; height:auto;">
+       style="max-width:80%; height:auto;">
 </figure>
 
 This suggests that standard deviation will be low, figure 1.5 shows a regression plot between IMD Rank (a component of IMD Quintile) and ACHIEVED QOF points, the relationship does appear weak. 
@@ -76,22 +76,13 @@ This suggests that standard deviation will be low, figure 1.5 shows a regression
 <figure>
   <img src="{{ 'Images/fig_1_5.svg'| relative_url }}"
        alt="Figure 1.5"
-       style="max-width:60%; height:auto;">
+       style="max-width:80%; height:auto;">
 </figure>
 
 <figure>
   <img src="{{ 'Images/fig_1_6.png'| relative_url }}"
        alt="Figure 1.6"
-       style="max-width:60%; height:auto;">
-</figure>
-
-<figure class="double-figure">
-  <div class="double-figure-images">
-    <img src="{{ 'Images/fig_1_5.svg' | relative_url }}"
-         alt="Figure 1.5">
-    <img src="{{ 'Images/fig_1_6.png' | relative_url }}"
-         alt="Figure 1.6">
-  </div>
+       style="max-width:80%; height:auto;">
 </figure>
 
 Figure 1.6 illustrates the correlation matrix between all possible features. As a number of features are correlated >0.8 (using Pearsons Correlation) some features are dropped. Reducing the number of features protects against over-fitting the data. There is reduced correlation between the prevalence variables and the deprivation variables which all end with ‘Rank’.
@@ -102,13 +93,13 @@ Within Python the ‘statsmodels’ package was used. This package shares simila
 <figure>
   <img src="{{ 'Images/fig_1_7_table.png'| relative_url }}"
        alt="Figure 1.7"
-       style="max-width:60%; height:auto;">
+       style="max-width:80%; height:auto;">
 </figure>
 
 <figure>
   <img src="{{ 'Images/fig_1_7_2.png'| relative_url }}"
        alt="Figure 1.7.2"
-       style="max-width:60%; height:auto;">
+       style="max-width:80%; height:auto;">
 </figure>
 
 Before starting this project it was assumed that both prevalence and deprivation would create a linear regression model that accurately predicted Achieved QOF points, with either prevalence or deprivation showing overall to be a more successful predictor. This was not achieved and instead most of the variation in achieved points must be due to factors outside of the data model. The author has spent some time considering whether a pre-bias in perceived outcome prevented a full investigation into whether this was a feasible project idea.
