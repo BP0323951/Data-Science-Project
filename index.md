@@ -37,8 +37,17 @@ This project demonstrates that neither prevalence of disease nor deprivation rel
 ### Data Engineering
 A variety of open source data will be used from multiple sources. Using the Government Data Quality Framework (The Government Data Quality Framework, 2020) the data quality will be assessed and the data joined, illustrated in figure 1.2 
 
-![Data model](Images/fig_1_2.png)
-*Figure 1.2 the data linkage model showing how 5 datasets are combined to create one wide dataset with Practice ID as the primary key. *
+<p align="center">
+  <img src="Images/qof_data_eng_diagram.png"
+    alt="Data model"
+    style="display:block;margin:0 auto;max-width:75%;height:auto;">
+</p>
+
+<p style="text-align:center; font-size:0.75rem;">
+  <em>
+    Figure 1.2 the data linkage model showing how 5 datasets are combined to create one wide dataset with Practice ID as the primary key. 
+  </em>
+</p>
 
 All data is for the financial year 2023/24, the latest available and ensures data timeliness.
 
