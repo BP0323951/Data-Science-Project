@@ -73,16 +73,13 @@ Initially figure 1.1 was recreated, as closely as possible, using the subset dat
 
 This suggests that standard deviation will be low, figure 1.5 shows a regression plot between IMD Rank (a component of IMD Quintile) and ACHIEVED QOF points, the relationship does appear weak. 
 
-<figure>
-  <img src="{{ Images/fig_1_5.png'| relative_url }}"
-       alt="Figure 1.5"
-       style="max-width:60%; height:auto;">
-</figure>
-
-<figure>
-  <img src="{{ Images/fig_1_6.png'| relative_url }}"
-       alt="Figure 1.6"
-       style="max-width:60%; height:auto;">
+<figure class="double-figure">
+  <div class="double-figure-images">
+    <img src="{{ 'Images/fig_1_5.png' | relative_url }}"
+         alt="Figure 1.5">
+    <img src="{{ 'Images/fig_1_6.png' | relative_url }}"
+         alt="Figure 1.6">
+  </div>
 </figure>
 
 Figure 1.6 illustrates the correlation matrix between all possible features. As a number of features are correlated >0.8 (using Pearsons Correlation) some features are dropped. Reducing the number of features protects against over-fitting the data. There is reduced correlation between the prevalence variables and the deprivation variables which all end with ‘Rank’.
