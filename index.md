@@ -17,7 +17,12 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
        style="display:block;margin:0 auto;max-width:75%;height:auto;">
 </p>
 
-_Figure 1.1 The average QOF points when split by index of multiple deprivation quintile, showing fewer points awarded to the most deprived areas._
+<p style="text-align:center; font-size:0.9em;">
+  <em>
+    Figure 1.1 The average QOF points when split by index of multiple deprivation quintile,
+    showing fewer points awarded to the most deprived areas.
+  </em>
+</p>
 
 Note that in the figure 1.1 IMD quintile 1 relates to the least deprived, however this is not the industry standard and so within this study IMD Quintile 1 will relate to the most deprived.
 
