@@ -51,36 +51,74 @@ All joins were performed on a 1-1 basis, or many-1, in both instances the left h
 
 Before joining to practice postcode data, a derived field name ‘ACHIEVED’ is created from the QOF Data and checked for data consistency, see figure 1.3 for code and output.
 
-![Code Snippet](Images/fig_1_3.png)
-*Figure 1.3 code used to create aggregated (sum) field ‘ACHIEVED’ being the sum of all QOF points awarded across all domains.*
+<figure>
+  <img src="{{ 'Images/fig_1_3.png| relative_url }}"
+       alt="Figure 1.3"
+       style="max-width:60%; height:auto;">
+  <figcaption>
+    Figure 1.3 code used to create aggregated (sum) field ‘ACHIEVED’ being the sum of all QOF points awarded across all domains.
+  </figcaption>
+</figure>
 
 The data set is split into df_test and df_train,a random state is specified within the code to ensure that any analysis can be reproduced.  
 
 ### Data Visualisation
 Initially figure 1.1 was recreated, as closely as possible, using the subset dataset. Instead of ‘Percentage of Max Points’ the ‘Achieved QOF Points’ was used (absolute value and not percentage of total). Figure 1.4 shows that while IMD Quintile 5 (least deprived practices) do indeed receive more points that IMD Quintile 1 (most deprived) the difference becomes minimal when the y-axis is drawn to zero. Furthermore, this effect is negated when the points are converted into monetary values.
 
-![Achieved QOF points and  QOF per register and per weighted](Images/fig_1_4.png)
+<figure>
+  <img src="{{ 'Images/fig_1_4.png| relative_url }}"
+       alt="Figure 1.4"
+       style="max-width:60%; height:auto;">
+</figure>
 
 This suggests that standard deviation will be low, figure 1.5 shows a regression plot between IMD Rank (a component of IMD Quintile) and ACHIEVED QOF points, the relationship does appear weak. 
 
-![Correlation between IMD and points](Images/fig_1_5.png)
-![Correlation plot for all features](Images/fig_1_6.png)
+<figure>
+  <img src="{{ Images/fig_1_5.png| relative_url }}"
+       alt="Figure 1.5"
+       style="max-width:60%; height:auto;">
+</figure>
+
+<figure>
+  <img src="{{ Images/fig_1_6.png| relative_url }}"
+       alt="Figure 1.6"
+       style="max-width:60%; height:auto;">
+</figure>
 
 Figure 1.6 illustrates the correlation matrix between all possible features. As a number of features are correlated >0.8 (using Pearsons Correlation) some features are dropped. Reducing the number of features protects against over-fitting the data. There is reduced correlation between the prevalence variables and the deprivation variables which all end with ‘Rank’.
 
 ### Data Analytics
 Within Python the ‘statsmodels’ package was used. This package shares similarities with R syntax making it interpretable for a wider audience. The model was created using the ‘df_train’ dataframe and whilst the model summary is invaluable it does not test the df_test dataframe. A mixture of sklearn and numpy packages along with a locally defined function will be used to test the model.  
 
-![Metric table](Images/fig_1_7_table.png)
-![Scatter plots](Images/fig_1_7_2.png)
+<figure>
+  <img src="{{ fig_1_7_table.png| relative_url }}"
+       alt="Figure 1.7"
+       style="max-width:60%; height:auto;">
+</figure>
+
+<figure>
+  <img src="{{ Images/fig_1_7_2.png| relative_url }}"
+       alt="Figure 1.7.2"
+       style="max-width:60%; height:auto;">
+</figure>
 
 Before starting this project it was assumed that both prevalence and deprivation would create a linear regression model that accurately predicted Achieved QOF points, with either prevalence or deprivation showing overall to be a more successful predictor. This was not achieved and instead most of the variation in achieved points must be due to factors outside of the data model. The author has spent some time considering whether a pre-bias in perceived outcome prevented a full investigation into whether this was a feasible project idea.
 
 However, with reference to the original graph which started the project (figure 1.1) it was compelling to hypothesis that deprivation could be aligned with QOF achievement. This was not quite the pattern observed within the subset of data used in the model, which whilst more quadratic in nature suggested only the least deprived 20% (IMD Quintil 5) has a different distribution. Additionally, to highlight the difference in interpretation where the y-axis is limited (left plot in figure 1.8) compared to removing the limits on the y-axis (right plot in figure 1.8)
 
-![Relative Axis QOF distribution](Images/fig_1_8_1.png)
-![Absolute Axis QOF distribution](Images/fig_1_8_2.png)
-_Figure 1.8 Both the potential quadratic relationship between Achieved QOF points and IMD Quintile, along with the visual effect of limiting the y-axis vs using an absolute scale._
+<figure class="double-figure">
+  <div class="double-figure-images">
+    <img src="{{ '/Images/fig_1_8_1.png' | relative_url }}"
+         alt="Figure 1.8.1">
+    <img src="{{ '/Images/fig_1_8_2.png' | relative_url }}"
+         alt="Figure 1.8.2">
+  </div>
+
+  <figcaption>
+    Figure 1.8 Both the potential quadratic relationship between Achieved QOF points and IMD Quintile,
+    along with the visual effect of limiting the y-axis vs using an absolute scale.
+  </figcaption>
+</figure>
 
 Also, rather than using IMD Quintile, which is a categorical value the models themselves were run on rank, which is more continuous (the rank of each LSOA across the country from the most to least deprived). The difference between a descriptive statistic (figure 1.1 mean by IMD Quintile and figure 1.8 boxplot by IMD Quintile) and using the IMD Rank within a regression model is that the descriptive grouping by quintile does not show whether the variation in correlation/patterns required within a regression model is truly present. 
 
