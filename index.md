@@ -24,7 +24,7 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
 
 Note that in the figure 1.1 IMD quintile 1 relates to the least deprived, however this is not the industry standard and so within this study IMD Quintile 1 will relate to the most deprived.
 
-QOF is designed to help with the additional workload associated with higher prevalence of disease it would perhaps be logical to speculate that perhaps higher prevalence would result in lower QOF achievement points. This would reduce the burden of inequality across the country: 
+QOF is designed to assist with the additional workload associated with higher prevalence of disease it would perhaps be logical to speculate that perhaps higher prevalence would result in lower QOF achievement points. This would reduce the burden of inequality across the country: 
 
 _“We think that incentives are a valuable tool for effectively allocating resources towards priority clinical areas. Some studies demonstrate that the introduction of QOF resulted in enhanced quality of care, reduced variation and better patient outcomes. They also consistently demonstrate that incentives lead to increased levels of recorded activity.”_ (UK Government, 2024)
 
