@@ -43,7 +43,7 @@ A variety of open source data will be used from multiple sources. Using the Gove
     style="display:block;margin:0 auto;max-width:75%;height:auto;">
 </p>
 
-<p style="text-align:center; font-size:0.75rem;">
+<p style="text-align:center; font-size:0.75em !important;">
   <em>
     Figure 1.2 the data linkage model showing how 5 datasets are combined to create one wide dataset with Practice ID as the primary key. 
   </em>
