@@ -19,8 +19,11 @@
   border-radius: 50%;
 }
 
-.figure-caption {
+figure figcaption {
+  display: block !important;
+  visibility: visible !important;
   text-align: center;
   font-size: 0.8rem;
   font-style: italic;
+  margin-top: 0.5em;
 }
