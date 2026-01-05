@@ -10,13 +10,24 @@
 .page-header::after {
   content: "";
   position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 120px;
-  height: 120px;
+  top: 1rem;
+  right: 1rem;
+  width: 10vw;       /* 10% of viewport width */
+  height: 10vw;      /* keep it square */
+  max-width: 150px;  /* prevent it from getting too large */
+  max-height: 150px;
   background-image: url("{{ '/Images/Analyst_Headshot.png' | relative_url }}");
   background-size: cover;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .page-header::after {
+    width: 15vw;      /* smaller on small screens */
+    height: 15vw;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 }
 
 figure {
