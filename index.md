@@ -52,7 +52,7 @@ All joins were performed on a 1-1 basis, or many-1, in both instances the left h
 Before joining to practice postcode data, a derived field name ‘ACHIEVED’ is created from the QOF Data and checked for data consistency, see figure 1.3 for code and output.
 
 <figure>
-  <img src="{{ 'Images/fig_1_3.png| relative_url }}"
+  <img src="{{ 'Images/fig_1_3.png'| relative_url }}"
        alt="Figure 1.3"
        style="max-width:75%; height:auto;">
   <figcaption>
@@ -66,7 +66,7 @@ The data set is split into df_test and df_train,a random state is specified with
 Initially figure 1.1 was recreated, as closely as possible, using the subset dataset. Instead of ‘Percentage of Max Points’ the ‘Achieved QOF Points’ was used (absolute value and not percentage of total). Figure 1.4 shows that while IMD Quintile 5 (least deprived practices) do indeed receive more points that IMD Quintile 1 (most deprived) the difference becomes minimal when the y-axis is drawn to zero. Furthermore, this effect is negated when the points are converted into monetary values.
 
 <figure>
-  <img src="{{ 'Images/fig_1_4.png| relative_url }}"
+  <img src="{{ 'Images/fig_1_4.png'| relative_url }}"
        alt="Figure 1.4"
        style="max-width:60%; height:auto;">
 </figure>
@@ -74,13 +74,13 @@ Initially figure 1.1 was recreated, as closely as possible, using the subset dat
 This suggests that standard deviation will be low, figure 1.5 shows a regression plot between IMD Rank (a component of IMD Quintile) and ACHIEVED QOF points, the relationship does appear weak. 
 
 <figure>
-  <img src="{{ Images/fig_1_5.png| relative_url }}"
+  <img src="{{ Images/fig_1_5.png'| relative_url }}"
        alt="Figure 1.5"
        style="max-width:60%; height:auto;">
 </figure>
 
 <figure>
-  <img src="{{ Images/fig_1_6.png| relative_url }}"
+  <img src="{{ Images/fig_1_6.png'| relative_url }}"
        alt="Figure 1.6"
        style="max-width:60%; height:auto;">
 </figure>
@@ -91,7 +91,7 @@ Figure 1.6 illustrates the correlation matrix between all possible features. As 
 Within Python the ‘statsmodels’ package was used. This package shares similarities with R syntax making it interpretable for a wider audience. The model was created using the ‘df_train’ dataframe and whilst the model summary is invaluable it does not test the df_test dataframe. A mixture of sklearn and numpy packages along with a locally defined function will be used to test the model.  
 
 <figure>
-  <img src="{{ fig_1_7_table.png| relative_url }}"
+  <img src="{{ fig_1_7_table.png'| relative_url }}"
        alt="Figure 1.7"
        style="max-width:60%; height:auto;">
 </figure>
@@ -108,9 +108,9 @@ However, with reference to the original graph which started the project (figure 
 
 <figure class="double-figure">
   <div class="double-figure-images">
-    <img src="{{ '/Images/fig_1_8_1.png' | relative_url }}"
+    <img src="{{ '/Images/fig_1_8_1.png.png' | relative_url }}"
          alt="Figure 1.8.1">
-    <img src="{{ '/Images/fig_1_8_2.png' | relative_url }}"
+    <img src="{{ '/Images/fig_1_8_2.png.png' | relative_url }}"
          alt="Figure 1.8.2">
   </div>
 
