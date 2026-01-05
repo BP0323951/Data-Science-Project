@@ -91,13 +91,13 @@ Figure 1.6 illustrates the correlation matrix between all possible features. As 
 Within Python the ‘statsmodels’ package was used. This package shares similarities with R syntax making it interpretable for a wider audience. The model was created using the ‘df_train’ dataframe and whilst the model summary is invaluable it does not test the df_test dataframe. A mixture of sklearn and numpy packages along with a locally defined function will be used to test the model.  
 
 <figure>
-  <img src="{{ fig_1_7_table.png'| relative_url }}"
+  <img src="{{ 'Images/fig_1_7_table.png'| relative_url }}"
        alt="Figure 1.7"
        style="max-width:60%; height:auto;">
 </figure>
 
 <figure>
-  <img src="{{ Images/fig_1_7_2.png| relative_url }}"
+  <img src="{{ 'Images/fig_1_7_2.png'| relative_url }}"
        alt="Figure 1.7.2"
        style="max-width:60%; height:auto;">
 </figure>
@@ -108,9 +108,9 @@ However, with reference to the original graph which started the project (figure 
 
 <figure class="double-figure">
   <div class="double-figure-images">
-    <img src="{{ '/Images/fig_1_8_1.png.png' | relative_url }}"
+    <img src="{{ 'Images/fig_1_8_1.png.png' | relative_url }}"
          alt="Figure 1.8.1">
-    <img src="{{ '/Images/fig_1_8_2.png.png' | relative_url }}"
+    <img src="{{ 'Images/fig_1_8_2.png.png' | relative_url }}"
          alt="Figure 1.8.2">
   </div>
 
