@@ -14,7 +14,7 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
 <figure>
   <img src="{{ '/Images/fig_1_1.png' | relative_url }}"
        alt="Figure 1.1"
-       style="max-width:50%; height:auto;">
+       style="max-width:75%; height:auto;">
   <figcaption>
     Figure 1.1 The average QOF points when split by index of multiple deprivation quintile,
     showing fewer points awarded to the most deprived areas.
@@ -34,17 +34,14 @@ This project demonstrates that neither prevalence of disease nor deprivation rel
 ### Data Engineering
 A variety of open source data will be used from multiple sources. Using the Government Data Quality Framework (The Government Data Quality Framework, 2020) the data quality will be assessed and the data joined, illustrated in figure 1.2 
 
-<p align="center">
-  <img src="Images/qof_data_eng_diagram.png"
-    alt="Data model"
-    style="display:block;margin:0 auto;max-width:75%;height:auto;">
-</p>
-
-<p style="text-align:center; font-size:0.1em !important;">
-  <em>
+<figure>
+  <img src="{{ '/Images/qof_data_eng_diagram.png' | relative_url }}"
+       alt="Figure 1.2"
+       style="max-width:60%; height:auto;">
+  <figcaption>
     Figure 1.2 the data linkage model showing how 5 datasets are combined to create one wide dataset with Practice ID as the primary key. 
-  </em>
-</p>
+  </figcaption>
+</figure>
 
 All data is for the financial year 2023/24, the latest available and ensures data timeliness.
 
