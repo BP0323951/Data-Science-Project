@@ -14,7 +14,7 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
 <p align="center">
 <img src="/Images/fig_1_1.png"
        alt="Data model"
-       style="display:block;margin:0 auto;max-width:50%;height:auto;">
+       style="display:block;margin:0 auto;max-width:70%;height:auto;">
 </p>
 
 
