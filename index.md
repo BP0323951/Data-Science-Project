@@ -54,7 +54,7 @@ Before joining to practice postcode data, a derived field name ‘ACHIEVED’ is
 <figure>
   <img src="{{ 'Images/fig_1_3.png| relative_url }}"
        alt="Figure 1.3"
-       style="max-width:60%; height:auto;">
+       style="max-width:75%; height:auto;">
   <figcaption>
     Figure 1.3 code used to create aggregated (sum) field ‘ACHIEVED’ being the sum of all QOF points awarded across all domains.
   </figcaption>
