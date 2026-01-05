@@ -13,7 +13,7 @@ In 2023 the Health Equity Evidence Centre published a compelling online article 
 
 
 <figure>
-  <img src="{{ '/Images/fig_1_1.png' | relative_url }}" alt="QOF & Deprivation" class="img-center" style="width:70%;">
+  <img src="{{ '/Images/fig_1_1.png'}}" alt="QOF & Deprivation" class="img-center" style="width:70%;">
   <figcaption><em>Figure 1.2 Data model diagram</em></figcaption>
 </figure>
 
